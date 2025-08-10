@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Week 2 Web Page</title>
+    </head>
+    <body>
+        <!--header-->
+            <header>
+                <article>
+                        <h1>Peter's Multi Section Webpage</h1>
+                        <p>Welcome to my webpage! This page is designed to showcase lists, tables, forms and media as used in html.</p>
+                </article>
+                <!--navigation-->
+                    <nav>
+                        <a href="#lists">LISTS</a>
+                        <a href="#tables">TABLES</a>
+                        <a href="#media">MEDIA</a>
+                        <a href="#forms">FORMS</a>
+                    </nav>
+            </header>
+
+        <!--main content-->
+            <main>
+                <!--Sections-->
+                    <!--Lists Section-->
+                        <section id="lists">
+                            <h2>POPULAR CAR BRANDS</h2>
+                                    <ul>
+                                        <li><strong>Sports Cars</strong></li>
+                                                <ul>
+                                                    <li>Lamborghini</li>
+                                                    <li>Koenigsegg</li>
+                                                    <li>Ferrari</li>
+                                                </ul>
+                                        <li><strong>Luxury cars</strong></li>
+                                                <ul>
+                                                    <li>Rolls Royce</li>
+                                                    <li>Mercedes Benz</li>
+                                                    <li>Audi</li>
+                                                </ul>
+                                        <li><strong>Family cars</strong></li>
+                                                <ul>
+                                                    <li>Toyota</li>
+                                                        <ol type="1">
+                                                            <li>land Cruiser Prado</li>
+                                                            <li>Probox</li>
+                                                            <li>Corolla</li>
+                                                        </ol>
+                                                    <li>Nissan</li>
+                                                        <ol type="a">
+                                                            <li>X-trail</li>
+                                                            <li>Wingroad</li>
+                                                            <li>Patrol</li>
+                                                        </ol>
+                                                </ul>
+                                    </ul>
+                        </section>
+
+                    <!--Tables Section-->
+                        <section id="tables">
+                            <h2>CAR SPECIFICATIONS</h2>
+                                <table border="1">
+                                    <tr>
+                                        <th>Car</th>
+                                        <th>Body type</th>
+                                        <th>Manufacturing company</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Cayenne turbo S</td>
+                                        <td>Coupe</td>
+                                        <td>Porsche</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark X</td>
+                                        <td>Sedan</td>
+                                        <td>Toyota</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Outlander</td>
+                                        <td>SUV</td>
+                                        <td>Mitsubishi</td>
+                                    </tr>
+                                </table>
+                            </section>
+
+                    <!--Media Section-->
+                        <section id="media">
+                            <h2>GALLERY</h2>
+                                <ul>
+                                    <li><h4>Featured Images</h4></li>
+                                        <img src="https://images.pexels.com/photos/5288699/pexels-photo-5288699.jpeg" alt="Lamborghini aventador" width="300">
+                                            
+                                    <li><h4>Featured Video</h4></li>
+                                        <video src="https://videos.pexels.com/video-files/8443860/8443860-uhd_2560_1440_30fps.mp4" width="600" controls>
+                                            This is a video of a red ferrari
+                                        </video>
+                                 </ul>
+                        </section>
+
+                    <!--Forms Section-->
+                        <Section id="forms">
+                            <h3>CAR TEST-DRIVE BOOKING FORM</h3>
+                            <form>
+                                <fieldset>
+                                    <legend><strong>Your Personal Information</strong></legend>
+                                        <label for="fullname">Full name:</label>
+                                        <input type="text" id="fullname" name="fullname" placeholder="John doe" required minlength="3"><br><br>
+
+                                        <label for="email">Your email:</label>
+                                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                                        <label for="phone">Phone Number:</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" pattern="^\+?[0-9\s]{7,15}$" required><br><br>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend><strong>Car Details</strong></legend>
+                                        <label for="car">Choose your Car:</label>
+                                        <select id="car" name="car" required>
+                                            <option value="" >--Select A Car--</option>
+                                            <option value="Aventador">lamborghini Aventador</option>
+                                            <option value="Panamera">Porsche Panamera</option>
+                                            <option value="Cullinan">Rolls Royce Cullinan</option>
+                                            <option value="Urus">Lamborghini Urus</option>
+                                        </select><br><br>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend><strong>TIMING</strong></legend>
+                                        <label for="date">Preferred Date:</label>
+                                        <input type="date" id="date" name="date" required><br><br>
+
+                                        <label for="time">Preferred Time:</label>
+                                        <input type="time" id="time" name="time" required><br><br>
+                                </fieldset>
+
+                                <input type="submit" value="Book Test Drive"><br><br>
+
+                                <label for="message"><strong>Message us</strong></label><br><br>
+                                <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+                                
+                                <input type="submit" value="Send">
+                            </form>
+                        </Section>
+            </main>
+        <!--footer-->
+            <footer>
+                <p>Vroom for Visiting</p>
+                <p><p>&copy; 2025 Car Lovers</p>
+            </footer>
+    </body>
+</html>
